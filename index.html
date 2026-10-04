@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa Eleitoral 2026</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f1f3f6;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 8px 30px rgba(0,0,0,.10);
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+        color: #222;
+        margin-bottom: 8px;
+    }
+
+    .header p {
+        color: #777;
+        font-size: 14px;
+    }
+
+    .candidate {
+        margin-bottom: 22px;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .name {
+        font-size: 17px;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .party {
+        font-size: 12px;
+        color: #777;
+        margin-left: 5px;
+    }
+
+    .percent {
+        font-size: 20px;
+        font-weight: bold;
+        color: #111;
+    }
+
+    .bar {
+        height: 14px;
+        background: #e9edf2;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .fill {
+        height: 100%;
+        border-radius: 20px;
+        background: #1769aa;
+    }
+
+    .lula .fill {
+        background: #16883b;
+    }
+
+    .position {
+        display: inline-flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #eee;
+        margin-right: 7px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .winner {
+        border: 2px solid #16883b;
+        padding: 15px;
+        border-radius: 15px;
+        background: #f2fff6;
+    }
+
+    .winner .position {
+        background: #16883b;
+        color: white;
+    }
+
+    .source {
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+        font-size: 12px;
+        color: #777;
+        line-height: 1.5;
+    }
+
+    .badge {
+        display: inline-block;
+        background: #16883b;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 11px;
+        margin-top: 8px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+    <div class="header">
+        <h1>🇧🇷 Pesquisa Eleitoral 2026</h1>
+        <p>Intenção de voto — 1º turno • Votos válidos</p>
+    </div>
+
+    <!-- LULA -->
+    <div class="candidate winner lula">
+        <div class="top">
+            <div class="name">
+                <span class="position">1</span>
+                Lula <span class="party">PT</span>
+            </div>
+            <div class="percent">45%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:45%"></div>
+        </div>
+
+        <span class="badge">Liderança</span>
+    </div>
+
+    <!-- FLÁVIO -->
+    <div class="candidate">
+        <div class="top">
+            <div class="name">
+                <span class="position">2</span>
+                Flávio Bolsonaro <span class="party">PL</span>
+            </div>
+            <div class="percent">42%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:42%"></div>
+        </div>
+    </div>
+
+    <!-- CAIADO -->
+    <div class="candidate">
+        <div class="top">
+            <div class="name">
+                <span class="position">3</span>
+                Ronaldo Caiado <span class="party">PSD</span>
+            </div>
+            <div class="percent">4%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:4%"></div>
+        </div>
+    </div>
+
+    <!-- RENAN -->
+    <div class="candidate">
+        <div class="top">
+            <div class="name">
+                <span class="position">4</span>
+                Renan Santos <span class="party">Missão</span>
+            </div>
+            <div class="percent">3%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:3%"></div>
+        </div>
+    </div>
+
+    <!-- AUGUSTO -->
+    <div class="candidate">
+        <div class="top">
+            <div class="name">
+                <span class="position">5</span>
+                Augusto Cury <span class="party">Avante</span>
+            </div>
+            <div class="percent">3%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:3%"></div>
+        </div>
+    </div>
+
+    <!-- ZEMA -->
+    <div class="candidate">
+        <div class="top">
+            <div class="name">
+                <span class="position">6</span>
+                Romeu Zema <span class="party">Novo</span>
+            </div>
+            <div class="percent">1%</div>
+        </div>
+
+        <div class="bar">
+            <div class="fill" style="width:1%"></div>
+        </div>
+    </div>
+
+    <div class="source">
+        <strong>Fonte:</strong> Datafolha, pesquisa divulgada em
+        3 de outubro de 2026.<br>
+        Margem de erro: 2 pontos percentuais.
+        <br><br>
+        <strong>Importante:</strong> os números acima representam
+        intenção de voto em pesquisa, não o resultado oficial da eleição.
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
